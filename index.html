@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bowling</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bowling.css">
+</head>
+<body>
+	<h1> Bowling Game Simulation</h1>
+	<section class="enterNumberofPlayers">
+		<p>Enter number of players (upto 5):</p>
+		<div id="noofPlayersError" class="notification"></div>
+		<input type:"number" id="players" autocomplete="on" autofocus/>
+		<button type="submit" id="numberofPlayers" method="">ENTER</button>
+    </section>
+	<article class="players">
+	</article>
+	<section id="gamePanelId" class="hidden">
+		<h3>Current Player:<span id="currentPlayer"></span><h3>
+		<h3>Pins Remaining:<span id="pinsRemaining"></span></h3>
+		<h3>Turns Remaining:<span id="turnsRemaining"></span></h3>
+		<div id="pinsError" class="notification"></div>
+		<input type="text" id="pins" autocomplete="on" autofocus/>
+		<button type="submit" id="pinsDown" method="">PINS DOWN</button>
+	</section>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bowling.js"></script>
+</body>
+</html>
